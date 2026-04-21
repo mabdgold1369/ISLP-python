@@ -1,1 +1,27 @@
+This python project makes use of the dataset:
+us_counties_covid19.csv (Kaggle: https://www.kaggle.com/datasets/sudalairajkumar/covid19-in-usa)
+Dimensions: over 800,000 observations, across 6 variables (date, county, state, fips, cases, deaths)
+Range of Time: January 21, 2020 - December 5, 2020
 
+Note: @plaintext@ represents library systems and other terminology encased.
+
+The COVID-19 pandemic presented a global health crisis, with the United States being no exception. 
+This dataset tracks the progress of new cases across the various states, and their particular counties. 
+Do note that this dataset does not include information regarding other non-state territories such as Washington D.C., Samoa, Puerto Rico, etc.
+Analysis and comparison of a dataset such as this withion each state will not necessarily provide ample information by itself, but can be used as a supplementary material.
+Further more granular analysis within each state using datasets that provide more context is strongly advised.
+
+The following has been undergone in this project:
+- Utilizing @pandas@ to remove missing data, and using aggregation for streamlining. 
+- Creating 7-day averages to ensure consistency (in the event of likely data log frequency variance)
+- Utilizing logarithmic plots (which essentially refocus the measurement through magnitude) to visualize the overall trajectory
+- Synthesizing a diversity of plots, including heatmaps using @seaborn@ in conjunction with @matplotlib@, comparing the 16 worst-hit counties
+
+This dataset focuses on exploratory analysis, the following are outside scope parameters:
+- Predictive forecasting
+- Causal inference
+- Global comparison
+
+The environment utilized as IDE is Google Colab, a cloud service based on Jupyter Notebook. 
+
+That will be all.
