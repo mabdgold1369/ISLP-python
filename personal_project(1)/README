@@ -24,4 +24,7 @@ This dataset focuses on exploratory analysis, the following are outside scope pa
 
 The environment utilized as IDE is Google Colab, a cloud service based on Jupyter Notebook. 
 
+The variation build performs all the same tasks, but with delegation to sqlite and R. SQL is used to clean and manipulate data, and R is used for plotting with @ggplot2@. 
+Consider it an amalgamation build.
+
 That will be all.
